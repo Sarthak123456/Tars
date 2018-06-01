@@ -45,7 +45,7 @@
 
 <script>
 window.onload = function what(){
-
+	$('#text').show();
 document.getElementById("text").innerHTML = "Tell me your date of birth?";
 $('.gray').prop('disabled', true);
 // document.getElementById("demo-non-form").click();
@@ -74,42 +74,13 @@ $('.gray').click(function(e){
     
     $(function () {
     
-        // Mobiscroll Calendar initialization
-        $('#demo').mobiscroll().calendar({
-            theme: 'ios',                     // Specify theme like: theme: 'ios' or omit setting to use default
-            lang: 'en',
-            display: 'bottom'                 // Specify display mode like: display: 'bottom' or omit setting to use default
-        });
-    
-        // Mobiscroll Calendar initialization
-        $('#demo-header').mobiscroll().calendar({
-            theme: 'ios',                     // Specify theme like: theme: 'ios' or omit setting to use default
-            lang: 'en',
-            display: 'bottom',                // Specify display mode like: display: 'bottom' or omit setting to use default
-            headerText: '{value}'             // More info about headerText: https://docs.mobiscroll.com/4-2-3/calendar#opt-headerText
-        });
+     
     
         // Mobiscroll Calendar initialization
         $('#demo-non-form').mobiscroll().calendar({
             theme: 'ios',                     // Specify theme like: theme: 'ios' or omit setting to use default
             lang: 'en',
             display: 'bottom',         // Specify display mode like: display: 'bottom' or omit setting to use default
-        });
-    
-        // Mobiscroll Calendar initialization
-        $('#demo-external').mobiscroll().calendar({
-            theme: 'ios',                     // Specify theme like: theme: 'ios' or omit setting to use default
-            lang: 'en',
-            display: 'bottom',                // Specify display mode like: display: 'bottom' or omit setting to use default
-            showOnTap: false,                 // More info about showOnTap: https://docs.mobiscroll.com/4-2-3/calendar#opt-showOnTap
-            onInit: function (event, inst) {  // More info about onInit: https://docs.mobiscroll.com/4-2-3/calendar#event-onInit
-                inst.setVal(new Date(), true);
-            }
-        });
-    
-        $('#show').click(function () {
-            $('#demo-external').mobiscroll('show');
-            return false;
         });
     
     });

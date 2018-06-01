@@ -21,8 +21,7 @@ body{
 	display: inline-flex;
 	background: #f1f1f1;
 	position: absolute;
-/*	box-shadow:  0 10px 0 10px;÷
-*/}
+}
 
 .placeholder{
 	color: gray;
@@ -41,6 +40,7 @@ body{
 	overflow: hidden;
 	background: lightgreen;
 	border-radius: 50px;
+	display: none;
 	padding: 10px;
 }
 
@@ -1229,10 +1229,10 @@ mbsc-avatar~.mbsc-card-title {
 }
 
 .mbsc-fr-popup {
-    max-width: 27%;
+    max-width: 28%;
     position: absolute;
-    margin: -181px 526px!important;
-    border-radius: 10px;
+    margin: -9px 526px!important;
+    border-radius: 0px;
 
     z-index: 2;
     top: 0;
