@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TARS</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+
+<div class="container">
+<a href="multiDays.html">Multi Days Selection</a>
+<div class="screen" >
+
+<div id='text'>
+
+</div>
+<div id="reply">
+	</div>
+</div>
+
+    <div class="mbsc-form-group submit">
+        
+            <input id="minmax" class="placeholder" placeholder="Please Select..." /><i class="fa fa-paper-plane fa-2x gray"></i> 
+        
+    </div>
+ 
+   
+</div>
+</div>
+
+</body>
+  <script type="text/javascript" src="Script.js">
+  </script>
+
+<script>
+window.onload = function what(){
+
+document.getElementById("text").innerHTML = "Select Time between 9:00am and 8:00pm";
+$('.gray').prop('disabled', true);
+// document.getElementById("demo-non-form").click();
+
+    setTimeout(function(){
+
+        $("#minmax").click();
+
+
+    },500);
+$('.gray').click(function(e){
+    $('#reply').show();
+    $('#reply').append($("#minmax").val());
+    
+});
+
+
+
+};
+
+    mobiscroll.settings = {
+    theme: 'ios'
+};
+$(function () {
+    // var now = new Date(),
+    //     minDate = new Date(now.getFullYear() - 100, 0, 1),
+    //     maxDate = new Date(now.getFullYear() + 30, 11, 31),
+        minTime = new Date(new Date().setHours(9, 0)),
+        maxTime = new Date(new Date().setHours(20, 0)),
+        // bday = new Date(now.getFullYear() - 18, now.getMonth(), now.getDay());
+
+    
+    $('#minmax').mobiscroll().time({
+        min: minTime,
+        max: maxTime
+    });
+
+    
+
+});
+
+</script>
+
+</html>
