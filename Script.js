@@ -1,24 +1,9 @@
-window.onload = function what(){
-
-document.getElementById("text").innerHTML = "When is your BIrthday?";
-$('.gray').prop('disabled', true);
-// document.getElementById("demo-non-form").click();
-
-    setTimeout(function(){
-
-        $("#demo-non-form").click();
 
 
-    },500);
-$('.gray').click(function(e){
-	$('#reply').show();
-	$('#reply').append($("#demo-non-form").val());
-	
+$(document).find('.mbsc-fr-btn1').on('click', function(){
+console.log('jvgh');
 });
-
-
-
-};
+  
 
 
 !function(e, t) {

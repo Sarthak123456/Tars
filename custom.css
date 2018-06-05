@@ -1,5 +1,5 @@
 body{
-	background:#424955;
+	background:#d5e4ed;
 }
 .screen{
 
@@ -8,19 +8,21 @@ body{
 	margin:10% 0 0% 33%;
 	background:#fff;
 	color: #000;
+    position: relative;
 	border-radius: 5px;
-	padding: 10px;
+	
 
 }
 
 .submit{
-	margin:-62px 368px!important;
-	
 	border-radius:50px;
 	padding: 10px!important;
 	display: inline-flex;
 	background: #f1f1f1;
-	position: absolute;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+   
 }
 
 .placeholder{
@@ -32,24 +34,30 @@ body{
     width: 341px;
 }
 .gray{
-	color: gray;
+	color: #00cae1;
+    position: absolute;
+    right: 16px;
 }
 
 #text{
 	max-width: 200px;
 	overflow: hidden;
-	background: lightgreen;
+	background: #f1f1f1;
 	border-radius: 50px;
 	display: none;
+    margin: 12px 10px;
 	padding: 10px;
+    border-top-left-radius: 0.35em;
 }
 
 #reply{
-	    max-width: 210px;
+    max-width: 210px;
+    font-weight: 100;
+    color: #fff;
     max-height: 450px;
     text-align: left;
     border-radius: 50px;
-    background: silver;
+    background: #00cae1;
     overflow: scroll;
     padding: 10px;
     width: auto;
@@ -59,7 +67,247 @@ body{
     min-width: 100px;
     min-height: auto;
     display: none;
+    border-top-right-radius: 0.35em;
+    margin-right: 10px;
 }
+
+.mbsc-fr-popup {
+    max-width: 390px;
+    position: absolute;
+    margin: -8% 0 0% 37%;
+    border-radius: 0px;
+    z-index: 2;
+    font-size: 12px;
+    text-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y
+}
+.header{
+    background: #00cae1;
+    padding: 15px 5px;
+    width: 100%;
+}
+
+.headerBtn{
+float: right;
+background: #e1e1e1;
+padding: 10px;
+border-radius: 50px;
+color: #000;
+text-decoration: none;
+
+}
+.name{
+
+    color: #fff;
+    font-weight:  100;
+    margin:10px;
+    font-size: 20px;
+
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) {
+ .screen{
+    position: relative;
+}
+    .submit{
+    border-radius:50px;
+    padding: 10px!important;
+    display: inline-flex;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+}
+}
+ 
+/* Large screens */
+@media only screen and (min-width : 1824px) {
+   
+.screen{
+    position: relative;
+}
+    .submit{
+    border-radius:50px;
+    padding: 10px!important;
+    display: inline-flex;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.mbsc-fr-popup{
+
+    margin: -5% 0 0% 1089px;
+}
+ 
+}
+ 
+/* Tablets (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+ 
+.screen{
+    position: relative;
+}
+ .submit{
+    border-radius:50px;
+    padding: 10px!important;
+    display: inline-flex;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mbsc-fr-popup{
+        max-width:400px;
+    position: absolute;
+    margin: 0 0 0 34%;
+}
+}
+ 
+/* Tablets (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+ .screen{
+    position: relative;
+ }
+ .submit{
+    border-radius:50px;
+    padding: 10px!important;
+    display: inline-flex;
+    background: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mbsc-fr-popup{
+        max-width: 400px;
+    position: absolute;
+    margin:-76% 0 0 35%
+}
+}
+
+@media only screen and (min-width : 600px) and (max-device-width : 767px) {
+
+
+.screen{
+        margin: 40% 0 0 14%;
+    }
+.mbsc-fr-popup {
+    max-width: 390px;
+    position: absolute;
+    margin: -35% 0 0% 18%;
+}
+}
+ 
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) and (max-device-width : 599px) {
+ 
+    body{
+        background:#fff;
+
+    }
+
+.screen {
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+    width: 100%;
+}
+
+.submit{
+    /*margin: 390px 0 0 -15px!important;*/
+    width: 100%;
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    margin: 0px !important;
+
+}
+
+.header{
+    background: #00cae1;
+    padding: 15px 5px;
+    width: 100%;
+}
+
+#text{
+    margin: 10px 5px;
+    padding: 5px;
+    border-top-left-radius: 0.35em;
+}
+
+#reply{
+    margin-right: 5px;
+    border-top-right-radius: 0.35em;
+}
+.mbsc-fr-popup{
+    width: auto!important;
+    margin: auto!important;
+    max-width: 100%!important;
+}
+}
+ 
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+
+    body{
+        background:#fff;
+
+    }
+
+.screen {
+    margin: 0px;
+    padding: 0px;
+    height: 500px;
+    width: 100%;
+}
+
+.submit{
+    /*margin: 390px 0 0 -15px!important;*/
+    width: 100%;
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    margin: 0px !important;
+
+}
+
+.header{
+    background: #00cae1;
+    padding: 15px 5px;
+    width: 100%;
+}
+
+#text{
+    margin: 10px 5px;
+    padding: 5px;
+    border-top-left-radius: 0.35em;
+}
+
+#reply{
+    margin-right: 5px;
+    border-top-right-radius: 0.35em;
+}
+
+.mbsc-fr-popup{
+    width: auto!important;
+    margin: auto!important;
+    max-width: 100%!important;
+}
+ 
+}
+
+
 
 .mbsc-cal-slide,
 .mbsc-cal-day,
@@ -1228,24 +1476,6 @@ mbsc-avatar~.mbsc-card-title {
     outline-offset: -2px
 }
 
-.mbsc-fr-popup {
-    max-width: 28%;
-    position: absolute;
-    margin: -9px 526px!important;
-    border-radius: 0px;
-
-    z-index: 2;
-    top: 0;
-    left: 0;
-    font-size: 12px;
-    text-shadow: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y
-}
 
 .mbsc-rtl {
     direction: rtl

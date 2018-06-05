@@ -13,33 +13,38 @@
 </head>
 <body>
 
-<div class="container">
-<a href="minmaxDays.html">Min Max days</a>
-<div class="screen" >
 
+<div class="container">
+  <div class="row">
+
+<div class="screen" >
+<div class="header">
+  <img src='https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg' class="rounded-circle" width="50" height="50"/><span class="name">Bot</span>
+<a  class="headerBtn " href="minmaxDays.html">Min max days</a>
+
+</div>
 <div id='text'>
 
 </div>
 <div id="reply">
-	</div>
+  </div>
+
 
 <!-- <div class="submit">
-	<p><span class='' >Choose from below...</span> </p><
+  <p><span class='' >Choose from below...</span> </p><
 </div -->
 
-
-
-</div>
-
-
-    
-    <div class="mbsc-form-group submit">
+<div class="demo-container submit">
         
-            <input id="count" class="placeholder" placeholder="Please Select..." /><i class="fa fa-paper-plane fa-2x gray"></i> 
-     
+        <input id="count" class="demo-non-form placeholder" placeholder="Please Select..." /><i class="fa fa-paper-plane fa-2x gray"></i>
+      
+    </div>
+
 
 </div>
-   
+
+
+
 </div>
 </div>
 
@@ -61,8 +66,8 @@ $('.gray').prop('disabled', true);
 
     },500);
 $('.gray').click(function(e){
-    $('#reply').show();
-    $('#reply').append($("#count").val());
+     $('#reply').fadeIn('slow');    $('#reply').append($("#count").val());
+      $('#count').val('');
      
 
     
