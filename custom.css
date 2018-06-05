@@ -242,7 +242,7 @@ text-decoration: none;
 
 #text{
     margin: 10px 5px;
-    padding: 5px;
+    padding: 10px;
     border-top-left-radius: 0.35em;
 }
 
@@ -251,7 +251,7 @@ text-decoration: none;
     border-top-right-radius: 0.35em;
 }
 .mbsc-fr-popup{
-    width: auto!important;
+    width: 100%!important;
     margin: auto!important;
     max-width: 100%!important;
 }
@@ -290,7 +290,7 @@ text-decoration: none;
 
 #text{
     margin: 10px 5px;
-    padding: 5px;
+    padding: 10px;
     border-top-left-radius: 0.35em;
 }
 
@@ -300,7 +300,7 @@ text-decoration: none;
 }
 
 .mbsc-fr-popup{
-    width: auto!important;
+    width: 100%!important;
     margin: auto!important;
     max-width: 100%!important;
 }
